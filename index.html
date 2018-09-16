@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>UCLA Dining Hall Survey Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto Condensed|Tangerine|Noto Serif JP|Oswald:400,700' rel='stylesheet'>
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div class="header">
+  <div id="header-2">
+  <h1 style="">UCLA Dining Hall Survey</h1> 
+    <p>We'd like to hear what you liked/disliked about UCLA Dining Hall! Please send us your feedback using the form below.</p>
+  </div>
+  <img src="https://i.pinimg.com/originals/37/d0/16/37d0167e104a25ab9b7ee7fb84d801cd.jpg" alt="logo">
+</div>
+
+<div class="body-container">
+   <p id="intro">Please be specific so we can improve as much as we can </p>
+  <form id="survey-form" method="GET">
+  <div class="row">
+    <div class="label">
+     <label id="name-label" for="name">* Name:</label>
+    </div>
+    <div class="rightTab">
+     <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+    </div>
+  </div>
+    
+  <div class="row">
+   <div class="label">
+    <label id="email-label" for="email">* Email:</label>
+   </div>
+    <div class="rightTab">
+      <input type="text" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+    </div>
+  </div>
+    
+  <div class="row">
+   <div class="label">
+    <label id="age-label" for="age">* Age:</label>
+   </div>
+   <div class="rightTab">
+    <input type="number" name="age" id="age" class="input-field" placeholder="Age" required min="0" max="130">
+   </div>
+  </div>
+    
+  <div class="row">
+   <div class="label">
+    <label id="dining-hall-label" for="dining-hall">Choose your most favorite dining hall </label>
+   </div>
+    <div class="rightTab">
+     <select id="dropdown" name="dining-hall" class="drop-down">
+       <option selected="selected" disabled>Select an option</option>
+       <option value="Bruin Plate">Bruin Plate</option>
+       <option value="Covel">Covel</option>
+       <option value="De Neve">De Neve</option>
+       <option value="Feast">Feast</option>
+     </select>
+    </div>
+   </div>
+    
+  <div class="row">
+   <div class="label">
+    <label id="dining-hall-label" for="dining-hall">Average number of times you eat in dining halls (per month)</label>
+   </div>
+   <div class="rightTab">
+    <select id="dropdown" name="dining-hall" class="drop-down">
+       <option selected="selected" disabled>Select an option</option>
+       <option value="Bruin Plate">less than 5</option>
+       <option value="Covel">10 - 20</option>
+       <option value="De Neve">20 - 30</option>
+       <option value="Feast">30+</option>
+     </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="label">
+     <label id="dining-hall-label" for="dining-hall">What is one thing you like the most about our dining halls?</label>
+    </div>
+    <div class="rightTab" id="dining-halls-userRating-tab">
+      <input name="radio-button" type="radio" value="1" class="userRating"><label>Service</label>
+      <input name="radio-button" type="radio" value="2" class="userRating"><label>Food quality</label>
+      <input name="radio-button" type="radio" value="3" class="userRating"><label>Cleanliness</label>
+     </div>
+    </div>
+    
+    <div class="row" style="margin-top:30px;">
+    <div class="label">
+     <label id="fav-food-label" for="fav-food">Which one is your favorite dish type? </label>
+    </div>
+    <div class="rightTab">
+     <select id="fav-food-tab" name="fav-food" class="drop-down">
+       <option selected="selected" disabled>Select an option</option>
+       <option value="Bruin Plate">Asian foods</option>
+       <option value="Covel">Mexican foods</option>
+       <option value="De Neve">Mediterranean foods</option>
+       <option value="Feast">North American/European foods</option>
+     </select>
+    </div>
+  </div>
+    
+   <div class="row">
+     <div class="label">
+     <label id="check-label">Things that should be improved in the future (Check all that apply)</label>
+    </div>
+    <div class="rightTab">
+      <ul id="preferences" style="list-style: none;">
+        <li class="checkbox"><input name="prefer" value="1" type="checkbox"><label>Cleanliness</label></li>
+        <li class="checkbox"><input name="prefer" value="2" type="checkbox"><label>Service</label></li>
+        <li class="checkbox"><input name="prefer" value="3" type="checkbox"><label>Food variety</label></li>
+        <li class="checkbox"><input name="prefer" value="1" type="checkbox"><label>Food quality</label></li>
+        <li class="checkbox"><input name="prefer" value="1" type="checkbox"><label>Vegetarian foods</label></li>
+        <li class="checkbox"><input name="prefer" value="1" type="checkbox"><label>Timeliness of food delivery</label></li>
+      </ul>
+    </div>
+    </div>
+     
+     <div class="row">
+       <div class="label">
+     <label id="comment-label" for="comments">Leave any comments or suggestions </label>
+       </div>
+       <div class="rightTab">
+          <textarea id="comments" class="input-field" name="comment" placeholder="Enter your comments here.."></textarea>
+       </div>
+     </div>
+     <button id="submit" type="button">Submit</button>
+ </form>
+</div>
+  
+<footer id="name-tag">
+  <p>Coded by <span style="font-weight: bold;"><a href="https://github.com/JaeLee96" target="_blank" style="text-decoration: none; color: gray;">Jaehyeong Lee</a></span></p>
+  <p id="year">2018</p>
+</footer>
+  
+  
+
+</body>
+
+</html>
